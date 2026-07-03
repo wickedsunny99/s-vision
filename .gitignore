@@ -4,3 +4,16 @@ node_modules/
 __pycache__/
 .cursor/
 .cursor/cursor.project.json
+/backend/peer-server/node_modules/
+/frontend/node_modules/
+*.pyc
+venv/
+env/
+
+# Environment files
+.env
+*.env.local
+
+# Secrets
+secrets/
+keys/
