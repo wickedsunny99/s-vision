@@ -15,7 +15,7 @@ export default function App() {
 
   const handleAnalysis = useCallback((data) => {
     setDetections(data.objects);
-    setExtractedText(data.text.join(", "));
+    setExtractedText(Array.isArray(data.text) ? data.text.join(", ") : data.text);
     if (data.changes.length > 0) {
       setResponse(`System changes detected: ${data.changes.join(", ")}`);
     }
